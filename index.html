@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+
+        <div class="heroSection">
+            <div class="img">
+                <img src="./assets/contacts.png" alt="">
+            </div>
+
+            <h3>
+                Deepak Juneja
+            </h3>
+
+            <p>Web Developer</p>
+
+            <div class="buttons">
+                <button onclick="openModal()">
+                    Share my profile
+                </button>
+
+                <button>
+                    Follow Me
+                </button>
+            </div>
+        </div>
+
+            <div class="modal">
+
+                <div class="heading">
+                   <h2>Share My Profile</h2>
+
+                   
+                   <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+                </div>
+
+
+                <div>
+                    <p>Share This Via</p>
+
+                    <div class="icons">
+                        <a href="#" class="icon" id="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                          </a>
+                          <a href="#" class="icon" id="twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                          </a>
+                          <a href="#" class="icon" id="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                          </a>
+                          <a href="#" class="icon" id="whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                          </a>
+                          <a href="#" class="icon" id="telegram">
+                            <i class="fa-brands fa-telegram"></i>
+                          </a>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+    </div>
+
+
+
+<!-- Overlay -->
+<div class="overlay" onclick="closeModal()"></div>
+
+    <script src="https://kit.fontawesome.com/f565560385.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
